@@ -14,9 +14,9 @@ public class startTrigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Test");
-            cam.GetComponent<CameraMove>().enabled = true;
-            cam.gameObject.GetComponent<CameraMove>().enabled = true;
+            Debug.Log("Reached");
+            //cam.gameObject.GetComponent<CameraMove>().enabled = true;
+            LevelGeneration.doGeneration = true;
         }
     }
 }

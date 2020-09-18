@@ -1,0 +1,18 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
+
+public class Score : MonoBehaviour
+{
+    public Transform player;
+    public TextMeshProUGUI scoreText;
+    public Text finalText;
+    // Update is called once per frame
+    void Update()
+    {
+        scoreText.text = player.position.x.ToString("0") + "m";
+        finalText.text = player.position.x.ToString("0") + "m";
+    }
+}

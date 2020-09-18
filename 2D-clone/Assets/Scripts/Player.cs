@@ -200,6 +200,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag("StartTrigger"))
         {
             cam.gameObject.GetComponent<CameraMove>().enabled = true;
+            LevelGeneration.doGeneration = true;
         }
     }
 

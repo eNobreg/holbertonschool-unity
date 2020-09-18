@@ -7,13 +7,14 @@ public class LevelGeneration : MonoBehaviour
     public Transform startingPoint;
     public GameObject[] rooms;
     public float moveAmount;
-
     private float timeBtwRoom;
     public float startTimeBtwRoom = 0.25f;
     private float last = -1;
+    public static bool doGeneration;
     // Update is called once per frame
     void Start()
     {
+        doGeneration = false;
         transform.position = startingPoint.position;
         int rand = Random.Range(1, rooms.Length); 
         Instantiate(rooms[rand], transform.position, Quaternion.identity);
@@ -22,7 +23,8 @@ public class LevelGeneration : MonoBehaviour
     {
         if (timeBtwRoom <= 0)
         {
-            Move();
+            if (doGeneration == true)
+                Move();
             timeBtwRoom = startTimeBtwRoom;
         }
         else
@@ -32,7 +34,7 @@ public class LevelGeneration : MonoBehaviour
     }
     private void Move()
     {
-        int rand = Random.Range(1, rooms.Length);
+        int rand = Random.Range(0, rooms.Length);
         Vector2 newPos = new Vector2(transform.position.x + moveAmount, transform.position.y);
         if (rand != last)
         {

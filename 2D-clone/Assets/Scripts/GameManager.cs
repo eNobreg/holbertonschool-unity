@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     public GameObject player;
     public GameObject cam;
     public deathMenu deathScreen;
+    public Score scoreDisplay;
 
     public float transitionTime = 1f;
     public Animator transition;
@@ -19,6 +20,8 @@ public class GameManager : MonoBehaviour
         player.gameObject.SetActive(false);
         cam.gameObject.GetComponent<CameraMove>().enabled = false;
         deathScreen.gameObject.SetActive(true);
+        scoreDisplay.gameObject.SetActive(false);
+        LevelGeneration.doGeneration = false;
     }
 
     public void reset()
