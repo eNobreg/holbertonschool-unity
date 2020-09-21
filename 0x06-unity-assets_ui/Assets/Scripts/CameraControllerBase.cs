@@ -25,6 +25,7 @@ public class CameraControllerBase : MonoBehaviour
 
     private float rotY = 0.0f;
     private float rotX = 0.0f;
+    public bool isInverted = false;
     void Start()
     {
         respawPos = transform.position;
@@ -43,7 +44,10 @@ public class CameraControllerBase : MonoBehaviour
             float inputZ = Input.GetAxis("RightStickVertical");
 
             mouseX = Input.GetAxis("Mouse X");
-            mouseY = Input.GetAxis("Mouse Y");
+            if (isInverted)
+                mouseY = Input.GetAxis("Mouse Y") * -1;
+            else
+                mouseY = Input.GetAxis("Mouse Y");
 
             finalInputX = inputX + mouseX;
             finalInputZ = inputZ + mouseY;

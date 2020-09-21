@@ -10,6 +10,8 @@ public class CameraController : MonoBehaviour
     public float smooth = 10.0f;
     Vector3 dollyDir;
     public Vector3 dollyDirAdjusted;
+
+    public bool isInverted;
     public float distance;
     // Start is called before the first frame update
     void Awake()
