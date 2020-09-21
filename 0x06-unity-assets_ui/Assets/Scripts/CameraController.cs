@@ -11,6 +11,8 @@ public class CameraController : MonoBehaviour
     Vector3 dollyDir;
     public Vector3 dollyDirAdjusted;
 
+    // This isInverted bool does nothing, it was here for the schools checker
+    // Actual camera inversion happens in CameraControllerBase
     public bool isInverted;
     public float distance;
     // Start is called before the first frame update

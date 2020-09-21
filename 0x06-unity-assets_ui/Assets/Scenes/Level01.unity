@@ -8521,6 +8521,7 @@ MonoBehaviour:
   maxDistance: 7
   smooth: 10
   dollyDirAdjusted: {x: 0, y: 0, z: 0}
+  isInverted: 0
   distance: 0
 --- !u!1 &968824314
 GameObject:
@@ -14165,6 +14166,7 @@ MonoBehaviour:
   finalInputZ: 0
   smoothX: 0
   smoothY: 0
+  isInverted: 0
 --- !u!4 &1670671842
 Transform:
   m_ObjectHideFlags: 0
@@ -18765,7 +18767,7 @@ PrefabInstance:
     - target: {fileID: 4556203421439586198, guid: e64cb4b685c90c046a2666520a8f7332,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4556203421902140991, guid: e64cb4b685c90c046a2666520a8f7332,
         type: 3}
