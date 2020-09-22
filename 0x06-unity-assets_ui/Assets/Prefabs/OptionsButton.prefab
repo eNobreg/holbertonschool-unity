@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6689782021816492255}
   - component: {fileID: 6689782021816492248}
   - component: {fileID: 6689782021816492249}
-  - component: {fileID: 6689782022045333733}
+  - component: {fileID: 4338126109810411398}
   m_Layer: 5
   m_Name: OptionsButton
   m_TagString: Untagged
@@ -123,7 +123,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6689782022045333733}
+      - m_Target: {fileID: 4338126109810411398}
         m_MethodName: Options
         m_Mode: 1
         m_Arguments:
@@ -134,7 +134,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &6689782022045333733
+--- !u!114 &4338126109810411398
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -143,9 +143,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6689782021816492251}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa6242c28685ce4cb4fc4aa59f2e7d9, type: 3}
+  m_Script: {fileID: 11500000, guid: 6fb68f8a3f160c64bbfe30c3adad8cd2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  canvasesScene: {fileID: 0}
+  pauseUI: {fileID: 0}
 --- !u!1 &6689782022070335886
 GameObject:
   m_ObjectHideFlags: 0

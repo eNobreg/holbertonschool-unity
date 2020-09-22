@@ -25,7 +25,7 @@ public class CameraControllerBase : MonoBehaviour
 
     private float rotY = 0.0f;
     private float rotX = 0.0f;
-    public bool isInverted = false;
+    public bool isInverted;
     void Start()
     {
         respawPos = transform.position;
@@ -38,6 +38,11 @@ public class CameraControllerBase : MonoBehaviour
     }
     void Update()
     {
+        if (PlayerPrefs.GetInt("isInverted") == 1)
+            isInverted = true;
+        else
+            isInverted = false;
+
         if (Input.GetMouseButton(1))
         {
             float inputX = Input.GetAxis("RightStickHorizontal");
