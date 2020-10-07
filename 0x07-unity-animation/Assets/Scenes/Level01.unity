@@ -6063,6 +6063,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cam: {fileID: 963194225}
+  camBase: {fileID: 1670671840}
   controller: {fileID: 4761633248503053420}
   timer: {fileID: 1897831629}
   cutCam: {fileID: 632788147}
@@ -14339,7 +14340,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670671840}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 735833bc621887e438eeca97ad5baf60, type: 3}
   m_Name: 
@@ -18784,25 +18785,10 @@ PrefabInstance:
       propertyPath: winScreen
       value: 
       objectReference: {fileID: 1548557667}
-    - target: {fileID: 2844430199549999894, guid: 2822e9e4008d9584cadadb77c4aa1485,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -1.034
-      objectReference: {fileID: 0}
     - target: {fileID: 7126791900771189495, guid: 2822e9e4008d9584cadadb77c4aa1485,
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 8185678142710473068, guid: 2822e9e4008d9584cadadb77c4aa1485,
-        type: 3}
-      propertyPath: m_ApplyRootMotion
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8185678142710473068, guid: 2822e9e4008d9584cadadb77c4aa1485,
-        type: 3}
-      propertyPath: m_UpdateMode
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8649535861401530239, guid: 2822e9e4008d9584cadadb77c4aa1485,
         type: 3}

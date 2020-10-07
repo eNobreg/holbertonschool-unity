@@ -5,6 +5,7 @@ using UnityEngine;
 public class CutsceneController : MonoBehaviour
 {
     public GameObject cam;
+    public GameObject camBase;
     public GameObject controller;
     public GameObject timer;
     public GameObject cutCam;
@@ -13,6 +14,7 @@ public class CutsceneController : MonoBehaviour
     {
         if (finished == 1)
         {
+            camBase.gameObject.GetComponent<CameraControllerBase>().enabled = true;
             cam.gameObject.SetActive(true);
             controller.gameObject.GetComponent<PlayerController>().enabled = true;
             timer.gameObject.SetActive(true);
