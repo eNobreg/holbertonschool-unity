@@ -53,9 +53,9 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         respawnPos = transform.position;
-        respawnPos.y += 15f;
+        respawnPos.y += 30f;
         camRespawnPos = cam.position;
-        camRespawnPos.y += 15f;
+        camRespawnPos.y += 30f;
     }
     void Update()
     {
@@ -74,6 +74,7 @@ public class PlayerController : MonoBehaviour
         groundedTimer -= Time.deltaTime;
         if (onGround)
         {
+            player_anim.SetBool("isFalling", false);
             player_anim.SetBool("isJumping", false);
             groundedTimer = groundedTimerTime;
         }
@@ -153,6 +154,7 @@ public class PlayerController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Fall"))
         {
+            player_anim.SetBool("isFalling", true);
             transform.position = respawnPos;
             cam.position = camRespawnPos;
             rb.velocity = new Vector3(0.0f, rb.velocity.y, 0.0f);
