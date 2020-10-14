@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
             Vector3 moveDir = Quaternion.Euler(0f, targetAngle, 0f) * Vector3.forward;
             moveCharacter(moveDir.normalized);
         }
-        else if (rb.velocity.y == 0f)
+        else if (player_anim.GetBool("isJumping") == false)
         {
             rb.drag = 10;
             player_anim.SetBool("isRunning", false);
